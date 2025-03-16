@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lavender To-Do List</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center">To-Do List</h1>
+    <form id="addForm">
+      <input type="text" class="form-control" id="item" placeholder="Enter Task Name" required>
+      <textarea class="form-control" id="description" placeholder="Enter Description" required></textarea>
+      <select class="form-control" id="priority" required>
+        <option value="" disabled selected>Select Priority</option>
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
+      <input type="date" class="form-control" id="dueDate" required>
+      <button type="submit" class="btn btn-custom btn-block">Add Task</button>
+    </form>
+    <h3 class="mt-5">Your Tasks</h3>
+    <ul class="list-group" id="taskList"></ul>
+    <button id="clearAllTasks" class="btn btn-outline-danger mt-4 btn-block">Clear All Tasks</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
